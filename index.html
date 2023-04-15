@@ -9,13 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
     <title>Bootstrap sushi</title>
+    
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+
+    <!-- Navbar -->
+    <nav class="navbar bg-body-tertiary fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
@@ -24,22 +27,22 @@
         </div>
     </nav>
 
-    <div class="container my-5 text-center" style="max-width: 500px;">
-        <!-- Content here -->
-        <h1>Roll di Debugging</h1>
-        <p class="lead">Il nostro Roll di Debugging è il mix perfetto di ingredienti gustosi e divertenti! Con il
-            salmone
-            affumicato
-            "Bug", l'avocado "Fix" e le alghe croccanti "Linee di Codice", ti offriremo un'esperienza di sushi unica che
-            renderà il tuo palato e il tuo spirito di programmazione felici!</p>
+    <!-- Testo principale -->
+    <div class="container my-5 pt-4 text-center" style="max-width: 650px;">
+        <h1>Delizie da Codice</h1>
+        <p class="lead">Scopri il gusto unico del nostro sushi per programmatori: con ingredienti gustosi come il
+            salmone "Debug", l'avocado "Fix" e le alghe "Linee di Codice", ti offriamo un'esperienza culinaria
+            divertente e gustosa che renderà il tuo palato e il tuo spirito di programmazione felici!</p>
         <button type="button" class="btn btn-primary">Ordina subito</button>
         <button type="button" class="btn btn-secondary">Contattaci</button>
     </div>
 
+    <!-- Cards -->
     <div class="container text-center">
+
         <div class="row">
 
-            <div class="col-sm">
+            <div class="col-sm my-4">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/california.png" class="card-img-top" alt="california roll">
                     <div class="card-body">
@@ -55,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="col-sm">
+            <div class="col-sm my-4">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/dragon.png" class="card-img-top" alt="dragonroll">
                     <div class="card-body">
@@ -71,7 +74,7 @@
                 </div>
             </div>
 
-            <div class="col-sm">
+            <div class="col-sm my-4">
                 <div class="card" style="width: 18rem;">
                     <img src="./images/dynamite.png" class="card-img-top" alt="dynamite roll">
                     <div class="card-body">
@@ -125,11 +128,16 @@
             </div>
 
         </div>
+
     </div>
 
-
-
-
+    <!-- Footer -->
+    <footer class="footer text-center bg-dark">
+        <div class="container">
+            <p class="text-white mb-1">Testo generato da ChatGPT di OpenAI! © 2023.</p>
+            <p class="text-white my-0">Code by <a href="https://github.com/Smailen5">Smailen5</a>. © 2023.</p>
+        </div>
+    </footer>
 
     <!-- Prooper Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
